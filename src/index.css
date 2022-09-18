@@ -1,7 +1,10 @@
 :root {
   --bg-color: #111;
-  --card-bg: #000;
-  --btn-support: lime;
+  --card-bg: #070707;
+  --btn-support: #228CDB;
+  --bookmark-btn: #228CDB;
+  --bookmarked-btn: #051338;
+  --progress-bar: #228CDB;
 }
 
 * {
