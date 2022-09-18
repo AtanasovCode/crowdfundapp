@@ -1,0 +1,21 @@
+:root {
+  --bg-color: #111;
+  --card-bg: #000;
+  --btn-support: lime;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Commissioner', sans-serif;
+}

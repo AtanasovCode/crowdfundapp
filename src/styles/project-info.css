@@ -1,0 +1,48 @@
+.full-project-info-container {
+    margin: 25px 0;
+}
+
+.project-container {
+    width: 700px;
+    height: 250px;
+    border-radius: 12px;
+    background-color: var(--card-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.project-logo {
+    position: absolute;
+    top: -10%;
+    left: 47%;
+}
+
+.project-info-container {
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-buttons-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contribute-btn {
+    background-color: var(--btn-support);
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+

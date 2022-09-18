@@ -1,0 +1,47 @@
+.bookmark-container {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    transition: all .4s;
+}
+
+
+.bookmarked-container {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: #222;
+    border-radius: 25px;
+    transition: all .4s;
+}
+
+.bookmarked-btn {
+    width: 120px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: lime;
+    cursor: pointer;
+}
+
+.bookmark-btn {
+    width: 120px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.icon-bookmark {
+    transition: all .4s;
+    filter: contrast(200%);
+}
+
+.icon-bookmarked {
+    transition: all .4s;
+    filter: brightness(150%);
+}
