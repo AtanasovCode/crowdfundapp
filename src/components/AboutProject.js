@@ -1,15 +1,21 @@
+import React, { useState } from 'react';
 import '../styles/about-project.css';
-import Pledge200 from './Pledge200';
-import Pledge25 from './Pledge25';
-import Pledge75 from './Pledge75';
+import PledgeComponent from './PledgeComponent';
+import DonatePage from './DonatePage';
 
 
 const AboutProject = () => {
+
+    const [pledge25Left, setPledge25Left] = useState(101);
+    const [pledge75Left, setPledge75Left] = useState(64);
+    const [pledge200Left, setPledge200Left] = useState(2);
+
+
     return (
         <div className="about-full-container">
             <div className="about-info">
-                <div>
-                    <h3>About this project</h3>
+                <div className="about-heading">
+                    <h3>About This Project</h3>
                 </div>
                 <div>
                     The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
@@ -25,9 +31,34 @@ const AboutProject = () => {
                 </div>
             </div>
             <div className="donations-container">
-                <Pledge25 />
-                <Pledge75 />
-                <Pledge200 />
+                <PledgeComponent 
+                    pledgesLeft={pledge25Left} 
+                    name="Bamboo Stand"
+                    price="25"
+                    text="You get an ergonomic stand made of natural 
+                        bamboo. You've helped us launch our promotional campaign, 
+                        and you’ll be added to a special Backer member list.
+                    "
+                />
+                <PledgeComponent 
+                    pledgesLeft={pledge75Left} 
+                    name="Black Edition Stand"
+                    price="75"
+                    text="You get a Black Special Edition computer stand 
+                        and a personal thank you. You’ll be added to our 
+                        Backer member list. Shipping is included.
+                    "
+                />
+                <PledgeComponent 
+                    pledgesLeft={pledge200Left}
+                    name="Mahogany Special Edition"
+                    price="200"
+                    text="You get two Special Edition Mahogany stands, 
+                        a Backer T-Shirt, and a personal thank you. 
+                        You’ll be added to our Backer member list. 
+                        Shipping is included. 
+                    "
+                />
             </div>
         </div>
     );

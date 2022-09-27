@@ -1,5 +1,5 @@
 .project-stats-container {
-    width: 650px;
+    width: var(--card-width);
     height: 200px;
     background-color: var(--card-bg);
     margin-top: 50px;

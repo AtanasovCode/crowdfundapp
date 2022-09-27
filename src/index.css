@@ -1,10 +1,11 @@
 :root {
   --bg-color: #111;
   --card-bg: #070707;
-  --btn-support: #228CDB;
-  --bookmark-btn: #228CDB;
+  --btn-support: #3D9AE1;
+  --bookmark-btn: #FBFBFB;
   --bookmarked-btn: #051338;
-  --progress-bar: #228CDB;
+  --progress-bar: #3D9AE1;
+  --card-width: 700px;
 }
 
 * {

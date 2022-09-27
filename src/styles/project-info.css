@@ -3,7 +3,7 @@
 }
 
 .project-container {
-    width: 700px;
+    width: var(--card-width);
     height: 250px;
     border-radius: 12px;
     background-color: var(--card-bg);

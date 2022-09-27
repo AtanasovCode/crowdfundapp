@@ -20,7 +20,7 @@ const ProjectStats = (props) => {
                     </div>
                     <div>
                         of $100,000 backed
-                    </div>~
+                    </div>
                 </div>
                 <div>
                     <div>
