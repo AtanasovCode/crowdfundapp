@@ -1,9 +1,11 @@
+
+
 .about-full-container {
     width: var(--card-width);
     height: min-content;
     border-radius: 12px;
     background-color: var(--card-bg);
-    margin-bottom: 50px;
+    margin-bottom: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,17 +37,23 @@
     justify-content: center;
 }
 
-.pledge-container {
+.full-pledge-container {
     width: 93%;
-    height: 250px;
-    border: 1px solid rgba(61, 154, 225, .3765);
-    border-radius: 5px;
+    height: min-content;
+    border: 1px solid var(--outline-color);
     margin-bottom: 25px;
+    border-radius: 5px;
+    transition: all .6s;
+}
+
+.pledge-container {
+    height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 25px;
+    transition: all .6s;
 }
 
 .pledge-name-container {
@@ -69,4 +77,95 @@
     font-size: 30px;
     font-weight: 800;
     padding-right: 12px;
+}
+
+
+
+.donate-full-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    opacity: 0;
+    height: 0;
+    transition: all .588s ease;
+}
+
+.donate-full-container.show {
+    opacity: 1;
+    height: 100px;
+    padding: 25px;
+    transition: all .588s ease;
+}
+ 
+
+.input-donation {
+    width: 240px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--outline-color);
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.input-donation:focus {
+    outline: none;
+}
+
+.btn-donation {
+    background-color: var(--btn-support);
+    width: 150px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.cancel-btn {
+    background-color: #FA0F3A;
+    width: 120px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    transition: all .42s ease;
+}
+
+
+
+
+.full-thank-you-container {
+    width: var(--card-width);
+    height: 400px;
+    position: absolute;
+    top: 27%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--outline-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+    z-index: 999;
+}
+
+.thank-you-btn {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    background-color: var(--btn-support);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.thank-you-btn:focus {
+    outline: none;
 }

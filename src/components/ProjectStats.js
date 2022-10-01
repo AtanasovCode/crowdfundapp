@@ -1,9 +1,8 @@
 import '../styles/project-stats.css';
 import ProgressBar from './ProgressBar';
 
-const ProjectStats = (props) => {
+const ProjectStats = ({ money, backers }) => {
 
-    const { moneyRaised, backers } = props;
 
     const formatNumber = (number) => {
         return number.toLocaleString('en-US'); 
@@ -15,7 +14,7 @@ const ProjectStats = (props) => {
                 <div>
                     <div>
                         <h1>
-                            ${formatNumber(moneyRaised)}
+                            ${formatNumber(money)}
                         </h1>
                     </div>
                     <div>
@@ -40,7 +39,7 @@ const ProjectStats = (props) => {
                 </div>
             </div>
             <div className="progress-bar">
-                <ProgressBar progress={moneyRaised / 1000} />
+                <ProgressBar progress={money / 1000} />
             </div>
         </div>
     );
